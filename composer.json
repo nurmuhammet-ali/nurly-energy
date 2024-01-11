@@ -9,7 +9,9 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "laravel/nova": "*",
+        "eolica/nova-locale-switcher": "dev-support-nova-4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -50,6 +52,16 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        }
+    },
+    "repositories": {
+        "nova": {
+            "type": "path",
+            "url": "./nova"
+        },
+        "0": {
+            "type": "vcs",
+            "url": "https://github.com/anditsung/nova-locale-switcher"
         }
     },
     "config": {
